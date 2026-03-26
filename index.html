@@ -8,74 +8,80 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         html { scroll-behavior: smooth; }
-        .hero-overlay { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; }
-        .border-silver { border-color: #C0C0C0; }
+        /* Hero background using a unique, structured organic architecture image */
+        .hero-bg { 
+            background: linear-gradient(rgba(20, 30, 20, 0.85), rgba(10, 20, 10, 0.95)), 
+                        url('https://images.unsplash.com/photo-1627116712398-316886e41b99?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .text-glow { text-shadow: 0 0 15px rgba(251, 191, 36, 0.4); }
     </style>
 </head>
-<body class="bg-white text-slate-900 font-sans">
+<body class="bg-stone-50 text-stone-950 font-sans">
 
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <nav class="fixed w-full z-50 bg-stone-50/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center">
+                <div class="w-10 h-10 bg-teal-900 rounded-lg flex items-center justify-center">
                     <span class="text-white font-bold text-xl">S</span>
                 </div>
-                <div class="text-xl font-bold tracking-tight text-blue-950">SYNERGY <span class="text-slate-500 font-light">CONSORTIUM</span></div>
+                <div class="text-xl font-bold tracking-tight text-teal-950">SYNERGY <span class="text-stone-600 font-light">CONSORTIUM</span></div>
             </div>
-            <div class="hidden md:flex space-x-10 text-sm font-semibold uppercase tracking-widest text-slate-600">
-                <a href="#home" class="hover:text-blue-900 transition">Beranda</a>
-                <a href="#about" class="hover:text-blue-900 transition">Investasi</a>
-                <a href="#sectors" class="hover:text-blue-900 transition">Sektor</a>
-                <a href="#contact" class="hover:text-blue-900 transition">Kontak</a>
+            <div class="hidden md:flex space-x-10 text-sm font-semibold uppercase tracking-widest text-stone-700">
+                <a href="#home" class="hover:text-teal-900 transition">Beranda</a>
+                <a href="#about" class="hover:text-teal-900 transition">Investasi</a>
+                <a href="#sectors" class="hover:text-teal-900 transition">Sektor</a>
+                <a href="#contact" class="hover:text-teal-900 transition">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <header id="home" class="hero-overlay h-screen flex items-center justify-center text-center text-white px-6">
+    <header id="home" class="hero-bg h-screen flex items-center justify-center text-center text-white px-6">
         <div class="max-w-5xl">
-            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">
-                Membangun Masa Depan Melalui <br><span class="text-blue-400">Investasi Strategis</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight text-glow">
+                Membangun Masa Depan Melalui <br><span class="text-amber-400">Investasi Strategis</span>
             </h1>
-            <p class="text-xl md:text-2xl mb-12 text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+            <p class="text-xl md:text-2xl mb-12 text-stone-200 max-w-3xl mx-auto font-light leading-relaxed">
                 Synergy Consortium Group Ltd mengelola portofolio global dengan fokus pada pertumbuhan berkelanjutan, inovasi infrastruktur, dan kemitraan ekuitas swasta.
             </p>
             <div class="flex flex-wrap justify-center gap-6">
-                <a href="#sectors" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-sm font-bold transition-all shadow-xl">
+                <a href="#sectors" class="bg-amber-500 hover:bg-amber-600 text-teal-950 px-10 py-4 rounded-full font-bold transition-all shadow-xl text-lg">
                     Sektor Portofolio
                 </a>
-                <a href="#contact" class="border border-white hover:bg-white hover:text-blue-950 px-10 py-4 rounded-sm font-bold transition-all">
+                <a href="#contact" class="border-2 border-white hover:bg-white hover:text-teal-950 px-10 py-4 rounded-full font-bold transition-all text-lg">
                     Hubungi Kantor Pusat
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="about" class="py-24 px-6 bg-slate-50">
+    <section id="about" class="py-24 px-6 bg-stone-100">
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-2 gap-20 items-center">
                 <div>
-                    <h2 class="text-blue-900 font-bold tracking-widest uppercase text-sm mb-4">Filosofi Kami</h2>
-                    <h3 class="text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight">Keunggulan Dalam <br>Manajemen Modal.</h3>
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    <h2 class="text-teal-800 font-bold tracking-widest uppercase text-sm mb-4">Filosofi Kami</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold text-stone-950 mb-8 leading-tight">Keunggulan Dalam <br>Manajemen Modal.</h3>
+                    <p class="text-lg text-stone-700 mb-6 leading-relaxed">
                         Synergy Consortium Group Ltd beroperasi sebagai jembatan antara kapital strategis dan peluang pertumbuhan tinggi. Kami mengidentifikasi aset yang memiliki nilai intrinsik kuat dan potensi transformasi melalui manajemen aktif.
                     </p>
                     <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <i class="fas fa-check-circle text-blue-600"></i> Analisis Risiko Mendalam & Terukur
+                        <li class="flex items-center gap-3 text-stone-800 font-medium">
+                            <i class="fas fa-check-circle text-amber-600"></i> Analisis Risiko Mendalam & Terukur
                         </li>
-                        <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <i class="fas fa-check-circle text-blue-600"></i> Fokus pada Keberlanjutan Jangka Panjang
+                        <li class="flex items-center gap-3 text-stone-800 font-medium">
+                            <i class="fas fa-check-circle text-amber-600"></i> Fokus pada Keberlanjutan Jangka Panjang
                         </li>
-                        <li class="flex items-center gap-3 text-slate-700 font-medium">
-                            <i class="fas fa-check-circle text-blue-600"></i> Jaringan Global di 4 Benua
+                        <li class="flex items-center gap-3 text-stone-800 font-medium">
+                            <i class="fas fa-check-circle text-amber-600"></i> Jaringan Global di 4 Benua
                         </li>
                     </ul>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-blue-900 h-64 rounded-sm shadow-2xl flex items-end p-6">
-                        <span class="text-white text-4xl font-bold">Global<br>Reach</span>
+                    <div class="bg-teal-900 h-64 rounded-2xl shadow-2xl flex items-end p-6">
+                        <span class="text-white text-4xl font-bold leading-none">Global<br>Reach</span>
                     </div>
-                    <div class="bg-slate-300 h-64 rounded-sm overflow-hidden shadow-2xl">
+                    <div class="bg-stone-300 h-64 rounded-2xl overflow-hidden shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=2070&auto=format&fit=crop" class="h-full w-full object-cover grayscale" alt="Finance">
                     </div>
                 </div>
@@ -86,80 +92,80 @@
     <section id="sectors" class="py-24 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20">
-                <h2 class="text-4xl font-bold text-slate-900 mb-4">Sektor Fokus Strategis</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto">Kami berinvestasi pada sektor-sektor yang menjadi tulang punggung ekonomi modern.</p>
+                <h2 class="text-4xl font-bold text-stone-950 mb-4">Sektor Fokus Strategis</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">Kami berinvestasi pada sektor-sektor yang menjadi tulang punggung ekonomi modern dengan pendekatan berkelanjutan.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-12">
-                <div class="group">
-                    <div class="mb-6 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop" class="group-hover:scale-110 transition duration-500 rounded-sm" alt="Energy">
+                <div class="group bg-stone-50 p-6 rounded-2xl shadow-lg border border-stone-100">
+                    <div class="mb-6 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop" class="group-hover:scale-105 transition duration-500 rounded-sm" alt="Sustainable Energy">
                     </div>
-                    <h4 class="text-2xl font-bold mb-3 text-blue-950">Energi & Sumber Daya</h4>
-                    <p class="text-slate-600">Investasi pada solusi energi terbarukan dan manajemen sumber daya strategis untuk masa depan rendah karbon.</p>
+                    <h4 class="text-2xl font-bold mb-3 text-teal-950">Energi & Sumber Daya</h4>
+                    <p class="text-stone-700">Investasi pada solusi energi terbarukan dan manajemen sumber daya strategis untuk masa depan rendah karbon.</p>
                 </div>
-                <div class="group">
-                    <div class="mb-6 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031&auto=format&fit=crop" class="group-hover:scale-110 transition duration-500 rounded-sm" alt="Infrastructure">
+                <div class="group bg-stone-50 p-6 rounded-2xl shadow-lg border border-stone-100">
+                    <div class="mb-6 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1596700018153-24155b9a8968?q=80&w=2070&auto=format&fit=crop" class="group-hover:scale-105 transition duration-500 rounded-sm" alt="Sustainable Infrastructure">
                     </div>
-                    <h4 class="text-2xl font-bold mb-3 text-blue-950">Infrastruktur</h4>
-                    <p class="text-slate-600">Mengembangkan proyek infrastruktur vital yang menghubungkan pasar dan meningkatkan produktivitas regional.</p>
+                    <h4 class="text-2xl font-bold mb-3 text-teal-950">Infrastruktur</h4>
+                    <p class="text-stone-700">Mengembangkan proyek infrastruktur vital yang menghubungkan pasar dan meningkatkan produktivitas regional.</p>
                 </div>
-                <div class="group">
-                    <div class="mb-6 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2026&auto=format&fit=crop" class="group-hover:scale-110 transition duration-500 rounded-sm" alt="Real Estate">
+                <div class="group bg-stone-50 p-6 rounded-2xl shadow-lg border border-stone-100">
+                    <div class="mb-6 overflow-hidden rounded-xl">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070&auto=format&fit=crop" class="group-hover:scale-105 transition duration-500 rounded-sm" alt="Collaborative Private Equity">
                     </div>
-                    <h4 class="text-2xl font-bold mb-3 text-blue-950">Private Equity</h4>
-                    <p class="text-slate-600">Kemitraan dengan perusahaan berkembang melalui penyediaan modal kerja dan bimbingan strategis operasional.</p>
+                    <h4 class="text-2xl font-bold mb-3 text-teal-950">Private Equity</h4>
+                    <p class="text-stone-700">Kemitraan dengan perusahaan berkembang melalui penyediaan modal kerja dan bimbingan strategis operasional.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 px-6 bg-blue-950 text-white">
+    <section id="contact" class="py-24 px-6 bg-teal-950 text-white">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
             <div>
                 <h2 class="text-4xl font-bold mb-8">Kemitraan Global</h2>
-                <p class="text-blue-200 mb-10 text-lg">Jika Anda adalah institusi atau mitra profesional yang mencari kolaborasi strategis, silakan hubungi kantor perwakilan kami.</p>
+                <p class="text-amber-100 mb-10 text-lg">Jika Anda adalah institusi atau mitra profesional yang mencari kolaborasi strategis, silakan hubungi kantor perwakilan kami.</p>
                 <div class="space-y-6">
                     <div class="flex items-start gap-4">
-                        <i class="fas fa-map-marker-alt text-blue-400 mt-1"></i>
+                        <i class="fas fa-map-marker-alt text-amber-400 mt-1 text-2xl"></i>
                         <div>
                             <p class="font-bold">London Corporate Office</p>
-                            <p class="text-blue-300">St. James's Square, London, United Kingdom</p>
+                            <p class="text-stone-200">St. James's Square, London, United Kingdom</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
-                        <i class="fas fa-envelope text-blue-400"></i>
-                        <span class="text-blue-300">advisory@synergyconsortium.com</span>
+                        <i class="fas fa-envelope text-amber-400 text-2xl"></i>
+                        <span class="text-stone-200">advisory@synergyconsortium.com</span>
                     </div>
                 </div>
             </div>
-            <div class="bg-white p-10 shadow-2xl rounded-sm">
+            <div class="bg-stone-50 p-10 shadow-2xl rounded-2xl">
                 <form class="space-y-4">
                     <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="Nama" class="p-4 bg-slate-100 w-full text-slate-900 border-none focus:ring-2 focus:ring-blue-600">
-                        <input type="text" placeholder="Perusahaan" class="p-4 bg-slate-100 w-full text-slate-900 border-none focus:ring-2 focus:ring-blue-600">
+                        <input type="text" placeholder="Nama" class="p-4 bg-stone-100 w-full text-stone-900 border-none focus:ring-2 focus:ring-amber-500">
+                        <input type="text" placeholder="Perusahaan" class="p-4 bg-stone-100 w-full text-stone-900 border-none focus:ring-2 focus:ring-amber-500">
                     </div>
-                    <input type="email" placeholder="Email Institusi" class="p-4 bg-slate-100 w-full text-slate-900 border-none focus:ring-2 focus:ring-blue-600">
-                    <textarea rows="4" placeholder="Pesan Strategis" class="p-4 bg-slate-100 w-full text-slate-900 border-none focus:ring-2 focus:ring-blue-600"></textarea>
-                    <button class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 transition uppercase tracking-widest text-sm">Ajukan Pertanyaan</button>
+                    <input type="email" placeholder="Email Institusi" class="p-4 bg-stone-100 w-full text-stone-900 border-none focus:ring-2 focus:ring-amber-500">
+                    <textarea rows="4" placeholder="Pesan Strategis" class="p-4 bg-stone-100 w-full text-stone-900 border-none focus:ring-2 focus:ring-amber-500"></textarea>
+                    <button class="w-full bg-amber-500 hover:bg-amber-600 text-teal-950 font-bold py-4 transition uppercase tracking-widest text-sm rounded-full">Ajukan Pertanyaan</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 bg-slate-900 text-slate-500 px-6 border-t border-slate-800">
+    <footer class="py-12 bg-stone-950 text-stone-500 px-6 border-t border-stone-800">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="flex items-center gap-2">
-                <div class="w-6 h-6 bg-slate-700 rounded-sm flex items-center justify-center">
+                <div class="w-6 h-6 bg-teal-800 rounded-sm flex items-center justify-center">
                     <span class="text-white font-bold text-xs">S</span>
                 </div>
                 <div class="text-sm font-bold tracking-tight text-white uppercase">Synergy Consortium Group Ltd</div>
             </div>
             <p class="text-xs text-center">&copy; 2026 Synergy Consortium Group Ltd. Semua hak dilindungi undang-undang. Terdaftar di Inggris & Wales.</p>
-            <div class="flex space-x-6">
-                <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="hover:text-white transition"><i class="fab fa-twitter"></i></a>
+            <div class="flex space-x-6 text-xl">
+                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-amber-400 transition"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
